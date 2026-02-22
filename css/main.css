@@ -1,0 +1,18 @@
+/*  ========================================
+    main.css - Main Entry Point
+    ======================================== */
+
+/* 1. TOKENS - Variables */
+@import "tokens.css";
+
+/* 2. BASE - Global styles, reset,typography */
+@import "base.css";
+
+/* 3. LAYOUT - Page structure*/
+@import "layout.css"; /* 
+
+4. COMPONENTS - BEM blocks*/
+@import "components/";
+
+/* 5. UTILITIES - Helper classes */
+@import "utilities.css";
