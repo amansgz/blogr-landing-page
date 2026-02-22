@@ -1,0 +1,44 @@
+/*  ====================================
+    layout.css - Page Layout Structures
+    ==================================== */
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+}
+
+.row {
+  display: flex;
+  gap: var(--gap-md);
+}
+
+.align-center {
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 48rem) {
+  .md-row {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap-lg);
+  }
+
+  .md-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: var(--gap-lg);
+  }
+
+  .md-align-left {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .md-grid-col-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

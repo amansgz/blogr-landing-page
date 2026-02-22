@@ -1,0 +1,171 @@
+/* ===================================
+   base.css - Fundamental Styles
+  ==================================== */
+
+/* -----------------------------------
+  1. RESET
+  ------------------------------------ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove underline from links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive images */
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  display: block;
+}
+
+/* Form elements consistency */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  border: none;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* -----------------------------------
+  2. @FONT-FACE (Font imports)
+  ------------------------------------ */
+@font-face {
+  font-family: "Overpass";
+  src: url("../assets/fonts/overpass/Overpass-Light.ttf") format(truetype);
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url("../assets/fonts/overpass/Overpass-SemiBold.ttf") format(truetype);
+  font-weight: 600;
+  font-display: swap;
+}
+
+/* Ubuntu */
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../assets/fonts/ubuntu/Ubuntu-Regular.ttf") format(truetype);
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../assets/fonts/ubuntu/Ubuntu-Medium.ttf") format(truetype);
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../assets/fonts/ubuntu/Ubuntu-Bold.ttf") format(truetype);
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* -----------------------------------
+  3. GLOBAL STYLES (html, body)
+  ------------------------------------ */
+html {
+  font-size: 16px; /* base for rem units */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-base);
+  font-weight: var(--font-regular);
+  color: var(--color-text-dark);
+  line-height: 1.5;
+  background-color: var(--color-bg-light);
+  min-block-size: 100vh;
+}
+
+/* -----------------------------------
+  4. GLOBAL TYPOGRAPHY (headings)
+  ------------------------------------ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--color-heading-dark);
+  line-height: 1.2;
+  font-weight: var(--font-bold);
+}
+
+/* Default sizes */
+h1 {
+  font-size: var(--font-size-xxxl);
+}
+
+h2 {
+  font-size: var(--font-size-xxl);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+}
+
+h4 {
+  font-size: var(--font-size-lg);
+}
+
+/* -----------------------------------
+  5. TEXT ELEMENTS
+  ------------------------------------ */
+p {
+  margin-block-end: var(--space-md);
+}
+
+/* Remove margin from last paragraph */
+p:last-child {
+  margin-block-end: 0;
+}
+
+/* -----------------------------------
+  6. BASE UTILITIES
+  ------------------------------------ */
+.container {
+  max-inline-size: var(--container-max-width);
+  margin: var(--container-margin);
+  padding: 0 var(--container-padding);
+  inline-size: 100%;
+}
+
+/* Visually hidden but accessible to screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
