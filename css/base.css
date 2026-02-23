@@ -23,6 +23,7 @@ ol {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 /* Responsive images */
@@ -100,7 +101,8 @@ body {
   font-weight: var(--font-regular);
   color: var(--color-text-dark);
   line-height: 1.5;
-  background-color: var(--color-bg-light);
+  background-color: var(--color-bg-dark);
+  background-image: var(--color-gradient-2);
   min-block-size: 100vh;
 }
 
@@ -121,19 +123,19 @@ h6 {
 
 /* Default sizes */
 h1 {
-  font-size: var(--font-size-xxxl);
-}
-
-h2 {
   font-size: var(--font-size-xxl);
 }
 
-h3 {
+h2 {
   font-size: var(--font-size-xl);
 }
 
-h4 {
+h3 {
   font-size: var(--font-size-lg);
+}
+
+h4 {
+  font-size: var(--font-size-md);
 }
 
 /* -----------------------------------

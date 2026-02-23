@@ -1,0 +1,22 @@
+/*  ========================================
+    header.css - 
+    ======================================== */
+
+.header {
+  background-color: var(--color-bg-primary);
+  block-size: 100vh;
+  border-bottom-left-radius: var(--radius-xl);
+
+  background-image: url("../../assets/patterns/bg-pattern-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 320%;
+  background-position: 35% 30%;
+}
+
+@media (min-width: 48rem) {
+  .header {
+    background-image: url("../../assets/patterns/bg-pattern-intro-desktop.svg");
+    background-size: 250%;
+    background-position: 30% 50%;
+  }
+}

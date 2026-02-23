@@ -10,7 +10,7 @@
 
 .row {
   display: flex;
-  gap: var(--gap-md);
+  gap: var(--gap-sm);
 }
 
 .align-center {

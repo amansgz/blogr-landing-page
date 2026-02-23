@@ -31,8 +31,10 @@
   /* Colors Body text  */
 
   --color-text-dark: hsl(240, 10%, 16%); /* grey-900 */
-  --color-text-ligth: hsl(207, 13%, 34%); /* gray-600 */
+  --color-text-light-dark: hsl(207, 13%, 34%); /* gray-600 */
+  --color-text-light: hsl(0, 24%, 96%);
   --color-text-white: hsl(0, 100%, 100%); /* white */
+  --color-text-primary: hsl(355, 100%, 74%);
 
   /* Colors Background */
 
@@ -79,6 +81,7 @@
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 24px;
+  --radius-xl: 145px;
 
   /* Typography */
 
