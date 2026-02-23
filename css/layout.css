@@ -22,6 +22,7 @@
   .md-row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: var(--gap-lg);
   }
 
@@ -29,6 +30,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
     gap: var(--gap-lg);
   }
 

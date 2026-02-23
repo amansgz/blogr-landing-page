@@ -31,6 +31,7 @@ img {
   max-inline-size: 100%;
   block-size: auto;
   display: block;
+  object-fit: cover;
 }
 
 /* Form elements consistency */
@@ -101,8 +102,7 @@ body {
   font-weight: var(--font-regular);
   color: var(--color-text-dark);
   line-height: 1.5;
-  background-color: var(--color-bg-dark);
-  background-image: var(--color-gradient-2);
+  background-color: var(--color-bg-light);
   min-block-size: 100vh;
 }
 
@@ -119,6 +119,7 @@ h6 {
   color: var(--color-heading-dark);
   line-height: 1.2;
   font-weight: var(--font-bold);
+  margin-block: var(--space-md);
 }
 
 /* Default sizes */
@@ -143,6 +144,7 @@ h4 {
   ------------------------------------ */
 p {
   margin-block-end: var(--space-md);
+  max-inline-size: 50ch;
 }
 
 /* Remove margin from last paragraph */

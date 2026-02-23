@@ -1,0 +1,59 @@
+/* ===================================
+   features.css - sections and images
+  ==================================== */
+
+.future-section,
+.free-section {
+  background-color: var(--color-bg-light);
+  padding-block: var(--space-xxl);
+}
+
+.future-section {
+  padding-block-end: 15rem; /* for image phones */
+}
+
+/* Infrastructure section */
+.infrastructure-section {
+  background-image: url("../../assets/patterns/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: 65% -130%;
+  background-size: 120%;
+
+  border-top-right-radius: var(--radius-xl);
+  border-bottom-left-radius: var(--radius-xl);
+  background-color: var(--color-bg-dark);
+
+  position: relative; /* for image phones */
+}
+
+/* Image Phones */
+.infrastructure__image {
+  transform: translateY(-45%);
+}
+
+@media (min-width: 48rem) {
+  /* Future section */
+  .future__image-container {
+    inline-size: 50%;
+  }
+
+  /* Free section */
+  .free-section {
+    position: relative;
+  }
+
+  .free__image-container {
+    transform: translateX(-30%);
+  }
+
+  /* Infrastructure section */
+  .infrastructure-section {
+    background-position: 220% 85%;
+    background-size: 110%;
+  }
+
+  /* Image Phones */
+  .infrastructure__image {
+    transform: translateY(-14%);
+  }
+}
