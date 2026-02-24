@@ -41,6 +41,7 @@
   --color-bg-primary: hsl(356, 100%, 66%);
   --color-bg-dark: hsl(208, 49%, 24%);
   --color-bg-light: hsl(0, 100%, 100%);
+  --color-bg-light-gray: hsl(207, 13%, 94%);
 
   /* Colors Hover states */
 
@@ -52,7 +53,7 @@
 
   /* Colors lines, borders */
 
-  --color-divider: hsl(207, 13%, 34%); /* gray-600 */
+  --color-divider: hsl(205, 17%, 93%);
   --color-border-light: hsl(0, 100%, 100%);
 
   /* Spacings */

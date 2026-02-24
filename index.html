@@ -12,6 +12,7 @@
   <meta name="description" content="Solution to Blogr landing page challenge on Frontend Mentor">
 
   <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/app.js" defer></script>
 
 </head>
 
@@ -20,6 +21,122 @@
   <header class="header">
 
     <div class="container">
+
+      <nav class="nav  row">
+
+        <!-- Logo -->
+        <a href="" class="header__logo">
+          <img src="./assets/images/logo.svg" alt="Blogr logo">
+        </a>
+
+        <!-- Menu -->
+        <div class="nav__menu  col  md-row  md-align-left">
+
+          <ul class="nav__list  col  align-center  md-row  md-align-left">
+
+            <!-- Dropdown 1: Product -->
+            <li class="nav__item  nav__item--dropdown  col  align-center">
+
+              <button class="nav__link  nav__link--dropdown-btn  row  align-center">
+                Product
+                <!-- mobile arrow -->
+                <img class="nav__arrow  nav__arrow--dark" src="./assets/icons/icon-arrow-dark.svg" alt=""
+                  aria-hidden="true">
+
+                <!-- desktop arrow -->
+                <img class="nav__arrow  nav__arrow--light" src="./assets/icons/icon-arrow-light.svg" alt=""
+                  aria-hidden="true">
+              </button>
+
+              <div class="dropdown-menu">
+
+                <ul class="dropdown-menu__list">
+
+                  <li><a href="" class="dropdown-menu__link">Overview</a></li>
+                  <li><a href="" class="dropdown-menu__link">Pricing</a></li>
+                  <li><a href="" class="dropdown-menu__link">Marketplace</a></li>
+                  <li><a href="" class="dropdown-menu__link">Features</a></li>
+                  <li><a href="" class="dropdown-menu__link">Integrations</a></li>
+
+                </ul>
+              </div>
+
+            </li>
+
+            <!-- Dropdown 2: Company -->
+            <li class="nav__item  nav__item--dropdown  col  align-center">
+
+              <button class="nav__link  nav__link--dropdown-btn  row  align-center">
+                Company
+                <!-- mobile arrow -->
+                <img class="nav__arrow  nav__arrow--dark" src="./assets/icons/icon-arrow-dark.svg" alt=""
+                  aria-hidden="true">
+
+                <!-- desktop arrow -->
+                <img class="nav__arrow  nav__arrow--light" src="./assets/icons/icon-arrow-light.svg" alt=""
+                  aria-hidden="true">
+              </button>
+
+              <div class="dropdown-menu">
+
+                <ul class="dropdown-menu__list">
+
+                  <li><a href="" class="dropdown-menu__link">About</a></li>
+                  <li><a href="" class="dropdown-menu__link">Team</a></li>
+                  <li><a href="" class="dropdown-menu__link">Blog</a></li>
+                  <li><a href="" class="dropdown-menu__link">Careers</a></li>
+
+                </ul>
+
+              </div>
+            </li>
+
+            <!-- Dropdown 3: Connect -->
+            <li class="nav__item  nav__item--dropdown  col  align-center">
+
+              <button class="nav__link  nav__link--dropdown-btn  row  align-center">
+                Connect
+                <!-- mobile arrow -->
+                <img class="nav__arrow  nav__arrow--dark" src="./assets/icons/icon-arrow-dark.svg" alt=""
+                  aria-hidden="true">
+
+                <!-- desktop arrow -->
+                <img class="nav__arrow  nav__arrow--light" src="./assets/icons/icon-arrow-light.svg" alt=""
+                  aria-hidden="true">
+              </button>
+
+              <div class="dropdown-menu">
+
+                <ul class="dropdown-menu__list">
+
+                  <li><a href="" class="dropdown-menu__link">Contact</a></li>
+                  <li><a href="" class="dropdown-menu__link">Newsletter</a></li>
+                  <li><a href="" class="dropdown-menu__link">Linkedin</a></li>
+
+                </ul>
+              </div>
+            </li>
+
+          </ul>
+
+          <hr class="divider">
+
+          <div class="nav__auth  col  align-center  md-row  md-align-left">
+            <a href="" class="nav__auth-link nav__auth-link--primary">Login</a>
+            <a href="" class="nav__auth-link  nav__auth-link--secondary">Sign Up</a>
+          </div>
+
+        </div>
+
+
+        <!-- Mobile button hamburger  -->
+        <button class="nav__toggle" type="button">
+          <img class="icon-hamburger" src="./assets/icons/icon-hamburger.svg" alt="">
+          <img class="icon-close  d-none" src="./assets/icons/icon-close.svg" alt="">
+        </button>
+
+      </nav>
+
 
       <!-- Section Hero -->
       <section class="hero">
@@ -184,12 +301,15 @@
 
   <div class="container">
 
+    <!-- Footer navigation with logo and 3 menu columns -->
     <nav class="footer__nav  md-row  md-align-start  text-white">
 
+      <!-- Footer logo -->
       <div class="footer__logo  col  align-center  md-align-left">
         <img src="./assets/images/logo.svg" alt="Blogr logo">
       </div>
 
+      <!-- 3 menu columns: Product, company and connect -->
       <div class="col  align-center  md-align-left">
         <h3 class="text-white">Product</h3>
         <ul class="footer__menu">
@@ -227,34 +347,3 @@
 </footer>
 
 </html>
-
-
-<!-- 
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
-
-  Login
-  Sign Up
-
-
-
--->

@@ -21,6 +21,7 @@
 @media (min-width: 48rem) {
   .md-row {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: var(--gap-lg);
@@ -28,6 +29,7 @@
 
   .md-row-reverse {
     display: flex;
+    flex-direction: row;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;

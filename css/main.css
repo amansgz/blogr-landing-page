@@ -13,6 +13,7 @@
 
 4. COMPONENTS - BEM blocks*/
 @import "components/header.css";
+@import "components/nav.css";
 @import "components/hero.css";
 @import "components/features.css";
 @import "components/footer.css";
