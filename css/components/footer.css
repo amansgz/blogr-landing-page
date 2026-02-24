@@ -1,0 +1,22 @@
+.footer {
+  padding-block: var(--space-xxl);
+  background-color: var(--color-bg-dark);
+  border-top-right-radius: var(--radius-xl);
+}
+
+.footer__nav {
+  justify-content: space-evenly;
+}
+
+.footer__logo {
+  margin-block-start: var(--space-md);
+  margin-block-end: var(--space-lg);
+}
+
+.footer__menu li a {
+  transition: text-decoration 0.2s ease;
+}
+
+.footer__menu li a:hover {
+  text-decoration: underline;
+}

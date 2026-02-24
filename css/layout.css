@@ -39,8 +39,7 @@
     text-align: left;
   }
 
-  .md-grid-col-4 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  .md-align-start {
+    align-items: flex-start;
   }
 }

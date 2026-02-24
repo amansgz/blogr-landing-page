@@ -19,6 +19,10 @@ ol {
   list-style: none;
 }
 
+li {
+  margin-block-end: var(--space-sm);
+}
+
 /* Remove underline from links */
 a {
   text-decoration: none;
