@@ -3,14 +3,16 @@
     ======================================== */
 
 .header {
-  background-color: var(--color-bg-primary);
   block-size: 100vh;
-  border-bottom-left-radius: var(--radius-xl);
+
+  background-color: var(--color-bg-primary);
 
   background-image: url("../../assets/patterns/bg-pattern-intro-mobile.svg");
   background-repeat: no-repeat;
   background-size: 320%;
   background-position: 35% 30%;
+
+  border-bottom-left-radius: var(--radius-xl);
 }
 
 @media (min-width: 48rem) {

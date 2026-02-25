@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navToggle = document.querySelector(".nav__toggle");
   const navMenu = document.querySelector(".nav__menu");
-  const dropdownBtns = document.querySelectorAll(".nav__link--dropdown-btn");
+  const dropdownBtns = document.querySelectorAll(".nav__btn-dropdown");
 
   //  Mobile Hamburger Menu
   if (navToggle) {
@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
     btn.addEventListener("click", function (e) {
       e.stopPropagation(); // prevent click close dropdown
 
-      const currentDropdown = this.closest(".nav__item--dropdown");
+      const currentDropdown = this.closest(".nav__item-dropdown");
 
       dropdownBtns.forEach((otherBtn) => {
-        const otherDropdown = otherBtn.closest(".nav__item--dropdown");
+        const otherDropdown = otherBtn.closest(".nav__item-dropdown");
 
         if (otherDropdown !== currentDropdown) {
           otherDropdown.classList.remove("is-active");
@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.addEventListener("click", (e) => {
-    if (!e.target.closest(".nav__item--dropdown")) {
+    if (!e.target.closest(".nav__item-dropdown")) {
       dropdownBtns.forEach((btn) => {
-        btn.closest(".nav__item--dropdown").classList.remove("is-active");
+        btn.closest(".nav__item-dropdown").classList.remove("is-active");
       });
     }
   });

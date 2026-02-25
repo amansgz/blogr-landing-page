@@ -4,25 +4,12 @@
 
 .nav {
   justify-content: space-between;
-  padding-block: var(--space-lg);
+  padding-block: var(--space-xl);
   position: relative; /* for nav menu */
 }
 
-/* Mobile menu */
-.nav__toggle {
-  inline-size: 2.5rem;
-  block-size: 2.5rem;
-  background-color: transparent;
-  border: none;
-  z-index: 1000;
-}
-
-.is-active .icon-hamburger {
-  display: none;
-}
-
-.is-active .icon-close {
-  display: flex;
+.nav__logo {
+  inline-size: 6rem;
 }
 
 /* Menu */
@@ -45,21 +32,21 @@
   display: flex;
 }
 
-/* Dropdowns divs */
+/* Dropdowns */
+.nav__item-dropdown {
+  gap: var(--space-sm);
+  margin-block-end: var(--space-sm);
+}
+
 .dropdown-menu {
   display: none;
-
   padding: var(--space-lg);
   margin-block-start: var(--space-md);
   border-radius: var(--radius-sm);
   background-color: var(--color-bg-light-gray);
 }
 
-.nav__item--dropdown {
-  margin-block-end: var(--space-md);
-}
-
-.nav__item--dropdown.is-active .dropdown-menu {
+.nav__item-dropdown.is-active .dropdown-menu {
   display: flex;
 }
 
@@ -67,23 +54,23 @@
 .nav__arrow {
   inline-size: 0.9rem;
   block-size: 0.8rem;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .nav__arrow--light {
   display: none;
 }
 
-.nav__item--dropdown.is-active .nav__arrow {
+.nav__item-dropdown.is-active .nav__arrow {
   transform: rotate(180deg);
 }
 
 /* Divider */
 .divider {
-  inline-size: 90%;
-  margin-block: var(--space-md);
-  border: 1px solid var(--color-divider);
   align-self: center;
+  inline-size: 90%;
+  margin-block: var(--space-lg);
+  border: 1px solid var(--color-divider);
 }
 
 /* Nav auth: Login - Sign Up */
@@ -97,40 +84,71 @@
 
 .nav__auth-link--primary {
   align-self: center;
-  margin-block-end: var(--space-md);
+  margin-block-end: var(--space-sm);
 }
 
 .nav__auth-link--secondary {
   padding: 0.5em 1.8em;
-  border-radius: var(--radius-lg);
 
+  border-radius: var(--radius-lg);
   background-color: var(--color-bg-primary);
   color: var(--color-text-light);
   box-shadow: var(--shadow-sm);
 }
 
+/* Mobile menu */
+.nav__toggle {
+  background-color: transparent;
+  border: none;
+  z-index: 1000;
+}
+
+.is-active .icon-hamburger {
+  display: none;
+}
+
+.is-active .icon-close {
+  display: flex;
+}
+
 /* Media Queries */
 @media (min-width: 48rem) {
-  .nav__toggle {
-    display: none;
-  }
-
   .nav {
-    padding-block: var(--space-md);
-  }
-
-  .header__logo {
-    align-self: center;
+    align-items: center;
+    gap: var(--space-md);
   }
 
   .nav__menu {
+    position: relative; /* reset from mobile absolute position */
     display: flex;
-    align-items: flex-end;
-    gap: var(--gap-md);
-    position: relative;
+    align-items: center;
     padding-block: 0;
-    margin-inline-start: 2rem;
     background-color: transparent;
+  }
+
+  .nav__item-dropdown {
+    margin-block-end: 0;
+    position: relative; /* for dropdown menu */
+  }
+
+  .nav__btn-dropdown {
+    display: flex;
+    align-items: center;
+    color: var(--color-text-white);
+    transition: text-decoration 0.2s ease;
+  }
+
+  .nav__btn-dropdown:hover {
+    text-decoration: underline;
+  }
+
+  .divider,
+  .nav__arrow--dark {
+    display: none;
+  }
+
+  .nav__arrow--light {
+    display: block;
   }
 
   .dropdown-menu {
@@ -144,48 +162,21 @@
     box-shadow: var(--shadow-sm);
   }
 
-  .nav__item--dropdown {
-    position: relative;
-  }
-
-  .nav__link--dropdown-btn {
-    display: flex;
-    align-items: center;
-    color: var(--color-text-white);
-    transition: text-decoration 0.2s ease;
-  }
-
-  .nav__link--dropdown-btn:hover {
-    text-decoration: underline;
-  }
-
-  .divider,
-  .nav__arrow--dark {
-    display: none;
-  }
-
-  .nav__arrow--light {
-    display: block;
-  }
-
   .dropdown-menu__link {
     color: var(--color-text-dark);
     transition: color 0.2s ease;
   }
 
   .dropdown-menu__link:hover {
-    font-weight: var(--font-bold);
+    color: var(--color-hover-text-dark);
   }
 
   /* Nav Auth */
-  .nav__auth {
-    padding-block-start: 0;
-  }
 
   .nav__auth-link--primary {
-    color: var(--color-text-light);
     align-self: center;
     margin-block-end: 0;
+    color: var(--color-text-light);
   }
 
   .nav__auth-link--primary:hover {
@@ -194,8 +185,8 @@
 
   .nav__auth-link--secondary {
     padding: 0.5em 1.8em;
-    border-radius: var(--radius-lg);
 
+    border-radius: var(--radius-lg);
     background-color: var(--color-bg-light);
     color: var(--color-text-primary);
     box-shadow: var(--shadow-sm);
@@ -207,5 +198,9 @@
   .nav__auth-link--secondary:hover {
     background-color: var(--color-hover-bg-primary);
     color: var(--color-hover-text-light);
+  }
+
+  .nav__toggle {
+    display: none;
   }
 }

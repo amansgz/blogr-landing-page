@@ -133,15 +133,15 @@ h6 {
 
 /* Default sizes */
 h1 {
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-xxxl);
 }
 
 h2 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-xxl);
 }
 
 h3 {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
 }
 
 h4 {
@@ -152,13 +152,19 @@ h4 {
   5. TEXT ELEMENTS
   ------------------------------------ */
 p {
-  margin-block-end: var(--space-md);
+  font-size: var(--font-size-md);
   max-inline-size: 50ch;
+  margin-block-end: var(--space-md);
 }
 
 /* Remove margin from last paragraph */
 p:last-child {
   margin-block-end: 0;
+}
+
+a,
+button {
+  font-size: var(--font-size-md);
 }
 
 /* -----------------------------------

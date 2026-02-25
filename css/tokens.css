@@ -46,10 +46,11 @@
   /* Colors Hover states */
 
   --color-hover-bg-primary: hsl(355, 100%, 74%);
-  --color-hover-text-light: hsl(0, 100%, 100%);
-
   --color-hover-bg-light: hsl(0, 100%, 100%);
+
   --color-hover-text-primary: hsl(355, 100%, 74%);
+  --color-hover-text-light: hsl(0, 100%, 100%);
+  --color-hover-text-dark: hsl(240, 100%, 2%);
 
   /* Colors lines, borders */
 
@@ -74,6 +75,7 @@
   /* Gaps */
 
   --gap-sm: 1rem;
+  --gap-md: 1.5rem;
   --gap-lg: 2rem;
   --gap-xl: 3rem;
 
