@@ -1,22 +1,32 @@
+/* ===================================
+   footer.css 
+  ==================================== */
+
 .footer {
   padding-block: var(--space-xxl);
-  background-color: var(--color-bg-dark);
+  background-color: var(--color-bg-purple);
   border-top-right-radius: var(--radius-xl);
 }
 
 .footer__nav {
-  justify-content: space-evenly;
+  inline-size: 90%;
 }
 
 .footer__logo {
-  margin-block-start: var(--space-md);
-  margin-block-end: var(--space-lg);
+  margin-block-end: var(--space-md);
 }
 
-.footer__menu li a {
+.footer__link {
+  color: var(--color-text-very-light-dark);
   transition: text-decoration 0.2s ease;
 }
 
-.footer__menu li a:hover {
+.footer__link:hover {
   text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer__link {
+    transition-duration: 0.01ms;
+  }
 }

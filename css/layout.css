@@ -27,14 +27,6 @@
     gap: var(--gap-md);
   }
 
-  .md-row-reverse {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--gap-md);
-  }
-
   .md-align-left {
     align-items: flex-start;
     text-align: left;
@@ -42,5 +34,28 @@
 
   .md-align-start {
     align-items: flex-start;
+  }
+}
+
+@media (min-width: 64rem) {
+  .lg-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-md);
+  }
+
+  .lg-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap-md);
+  }
+
+  .lg-align-left {
+    align-items: flex-start;
+    text-align: left;
   }
 }

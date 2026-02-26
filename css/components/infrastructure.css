@@ -1,0 +1,67 @@
+/* ===================================
+   infrastructure.css 
+  ==================================== */
+
+.infrastructure-section {
+  position: relative; /* for image phones */
+  margin-block-start: 10rem; /* for image phones */
+
+  background-image:
+    url("../../assets/patterns/bg-pattern-circles.svg"),
+    linear-gradient(
+      var(--color-gradient-dark-purple),
+      var(--color-gradient-purple)
+    );
+  background-repeat: no-repeat, no-repeat;
+  background-size: 150%, cover;
+  background-position:
+    top -300% center,
+    center;
+
+  border-top-right-radius: var(--radius-xl);
+  border-bottom-left-radius: var(--radius-xl);
+}
+
+.infrastructure__image-container {
+  max-inline-size: 25rem;
+  transform: translateY(-45%);
+}
+
+.infrastructure__content {
+  margin-block-start: -5rem; /* compensate image translate */
+  padding-block-end: var(--space-xxl);
+}
+
+@media (min-width: 64rem) {
+  .infrastructure-section {
+    background-size: auto, cover;
+    background-position:
+      -100% 100%,
+      center; /* review later */
+
+    margin-block-end: 5rem;
+  }
+
+  .infrastructure__image-container {
+    inline-size: 50%;
+
+    block-size: 16rem;
+    margin-block-end: 5rem; /* for image overflow */
+  }
+
+  .infrastructure__image-container img {
+    position: absolute;
+    left: 0;
+
+    inline-size: 100%;
+    transform: translateY(30%);
+  }
+
+  .infrastructure__content {
+    inline-size: 50%;
+
+    padding-block-end: 0;
+    margin-block-start: 0;
+    margin-inline-start: auto;
+  }
+}
