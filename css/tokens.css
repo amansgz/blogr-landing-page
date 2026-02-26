@@ -9,12 +9,8 @@
 
   /* Colors Gradients */
 
-  /* orange-300, red-550 - intro/CTA mobile nav */
-  --color-gradient-1: linear-gradient(
-    45deg,
-    hsl(13, 100%, 72%),
-    hsl(353, 100%, 62%)
-  );
+  --color-gradient-orange: hsl(13, 100%, 72%);
+  --color-gradient-red: hsl(353, 100%, 62%);
 
   /* purple-950, purple-900 - body */
   --color-gradient-2: linear-gradient(
@@ -83,7 +79,7 @@
 
   --radius-sm: 4px;
   --radius-md: 8px;
-  --radius-lg: 24px;
+  --radius-lg: 24px; /* 50px */
   --radius-xl: 100px;
 
   /* Typography */
@@ -107,8 +103,9 @@
   --font-size-xxl: 2rem; /* 32px */
   --font-size-xxxl: 3rem; /* 48px */
 
-  /* Shadows */
+  --font-size-h1: clamp(2rem, 5vw, 3rem);
 
+  /* Shadows */
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);

@@ -125,15 +125,15 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
+  font-weight: var(--font-bold);
   color: var(--color-heading-dark);
   line-height: 1.2;
-  font-weight: var(--font-bold);
   margin-block: var(--space-md);
 }
 
 /* Default sizes */
 h1 {
-  font-size: var(--font-size-xxxl);
+  font-size: var(--font-size-h1);
 }
 
 h2 {

@@ -3,14 +3,15 @@
     ======================================== */
 
 .hero {
-  display: flex; /* to center hero content */
+  display: flex;
   justify-content: center;
   align-items: center;
-
   block-size: 70vh;
+  padding-block: var(--space-md);
 }
 
 .hero__title {
+  max-inline-size: 14ch;
   color: var(--color-heading-light);
 }
 
@@ -18,40 +19,8 @@
   color: var(--color-text-light);
 }
 
-.hero__button {
-  padding: 0.5em 1em;
-  font-weight: var(--font-bold);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
-  transition:
-    color,
-    background-color 0.2s ease;
-}
-
-.hero__button--primary {
-  background-color: var(--color-bg-light);
-  color: var(--color-text-primary);
-}
-
-.hero__button--primary:hover {
-  background-color: var(--color-hover-bg-primary);
-  color: var(--color-hover-text-light);
-}
-
-.hero__button--secondary {
-  border: 1px solid var(--color-border-light);
-  color: var(--color-text-white);
-}
-
-.hero__button--secondary:hover {
-  background-color: var(--color-hover-bg-light);
-  color: var(--color-hover-text-primary);
-}
-
-/* Reduce Motion */
-
-@media (prefers-reduced-motion: reduce) {
-  .hero__button {
-    transition-duration: 0.01ms;
+@media (min-width: 48rem) {
+  .hero__title {
+    max-inline-size: 26ch;
   }
 }

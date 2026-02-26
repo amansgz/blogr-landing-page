@@ -7,18 +7,27 @@
 
   background-color: var(--color-bg-primary);
 
-  background-image: url("../../assets/patterns/bg-pattern-intro-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: 320%;
-  background-position: 35% 30%;
+  background-image:
+    url("../../assets/patterns/bg-pattern-intro-mobile.svg"),
+    linear-gradient(var(--color-gradient-orange), var(--color-gradient-red));
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
+  background-position:
+    35% 50%,
+    center;
 
   border-bottom-left-radius: var(--radius-xl);
 }
 
 @media (min-width: 48rem) {
   .header {
-    background-image: url("../../assets/patterns/bg-pattern-intro-desktop.svg");
-    background-size: 250%;
-    background-position: 30% 50%;
+    background-image:
+      url("../../assets/patterns/bg-pattern-intro-desktop.svg"),
+      linear-gradient(var(--color-gradient-orange), var(--color-gradient-red));
+    background-size: auto, cover;
+
+    background-position:
+      33% 45%,
+      center;
   }
 }
