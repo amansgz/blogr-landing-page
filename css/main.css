@@ -11,6 +11,10 @@
 /* 3. LAYOUT - Page structure*/
 @import "layout.css"; /* 
 
+4. COMPONENTS - BEM blocks*/
+@import "components/header.css";
+@import "components/nav.css";
+@import "components/buttons.css";
 
 /* 5. UTILITIES - Helper classes */
 @import "utilities.css";
