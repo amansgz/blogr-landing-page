@@ -1,3 +1,45 @@
 /*  ====================================
     tokens.css 
     ==================================== */
+
+:root {
+  /* Colors */
+
+  /* Base colors */
+  --color-primary-100: hsl(356, 100%, 66%); /* red-500 */
+  --color-primary-200: hsl(355, 100%, 74%); /* red-400 */
+  --color-primary-300: hsl(208, 49%, 24%); /* blue-900 */
+  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-neutral-600: hsl(207, 13%, 34%); /* gray-600 */
+  --color-neutral-900: hsl(240, 10%, 16%); /* gray-900 */
+  --color-gradient-orange: hsl(13, 100%, 72%); /* orange-300 */
+  --color-gradient-red: hsl(353, 100%, 62%); /* red-550 */
+  --color-gradient-dark-purple: hsl(237, 17%, 21%); /* purple-950 */
+  --color-gradient-purple: hsl(237, 23%, 31%); /* purple-900 */
+
+  /* Colors Variations */
+  /* Lightness variations */
+  --color-light-neutral-600: hsl(207, 13%, 80%);
+  --color-very-light-neutral-600: hsl(207, 13%, 95%);
+
+  /* Colors Text */
+  --color-text-dark: var(--color-neutral-900); /* grey-900 */
+  --color-text-light: var(--color-neutral-600); /* gray-600 */
+  --color-text-very-light: var(--color-light-neutral-600);
+  --color-text-primary: var(--color-primary-200); /* red-400 */
+  --color-text-white: var(--color-neutral-white);
+
+  /* Colors Background */
+  --color-bg-primary: var(--color-primary-100); /* red-500 */
+  --color-bg-dark: var(--color-primary-300); /* blue-900 */
+  --color-bg-light: var(--color-very-light-neutral-600);
+  --color-bg-white: var(--color-neutral-white);
+
+  /* Colors Hover states */
+  --color-hover-primary: var(--color-primary-200); /* red-400 */
+  --color-hover-white: var(--color-neutral-white);
+
+  /* Colors lines, borders */
+  --color-divider: var(--color-very-light-neutral-600);
+  --color-border-white: var(--color-neutral-white);
+}
