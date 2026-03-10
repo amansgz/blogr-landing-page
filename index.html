@@ -8,94 +8,142 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <title>Frontend Mentor | [Blogr]</title>
+  <title>Frontend Mentor | Blogr Landing Page</title>
 
   <link rel="stylesheet" href="./css/main.css">
 
 </head>
 
 <body>
-  Product
+  <header class="header">
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+    <div class="container  header__container">
 
-  Company
+      <!-- Logo -->
+      <img class="header__logo" src="./assets/images/logo.svg" alt="Blogr logo">
 
-  About
-  Team
-  Blog
-  Careers
+      <!-- Navigation -->
 
-  Connect
+      <nav class="nav  header__nav" aria-label="Main navigation">
 
-  Contact
-  Newsletter
-  LinkedIn
+        <!-- Mobile button hamburger  -->
+        <button class="nav__toggle" type="button">
 
-  Login
-  Sign Up
+          <img class="nav__toggle-icon  nav__toggle-icon--hamburger" src="./assets/icons/icon-hamburger.svg" alt=""
+            aria-hidden="true">
+          <img class="nav__toggle-icon  nav__toggle-icon--close" src="./assets/icons/icon-close.svg" alt=""
+            aria-hidden="true">
 
-  A modern publishing platform
-  Grow your audience and build your online brand
+        </button>
 
-  Start for Free
-  Learn More
+        <!-- Main menu navigation -->
+        <div class="nav__menu">
 
-  Designed for the future
+          <ul class="nav__list">
 
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
-  change the looks of a blog.
+            <!-- Dropdown 1: Product -->
+            <li class="nav__item-dropdown">
 
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+              <button class="nav__btn-dropdown">
+                Product
 
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+                <!-- mobile arrow -->
+                <img class="icon-arrow  icon-arrow--dark" src="./assets/icons/icon-arrow-dark.svg" alt=""
+                  aria-hidden="true">
 
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+                <!-- desktop arrow -->
+                <img class="icon-arrow  icon-arrow--light" src="./assets/icons/icon-arrow-light.svg" alt=""
+                  aria-hidden="true">
 
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze,
-  but
-  capable of producing even the most complicated sites.
+              </button>
 
-  Product
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+              <div class="dropdown-menu">
 
-  Company
+                <ul class="dropdown-menu__list">
 
-  About
-  Team
-  Blog
-  Careers
+                  <li><a href="#" class="dropdown-menu__link">Overview</a></li>
+                  <li><a href="#" class="dropdown-menu__link">Pricing</a></li>
+                  <li><a href="#" class="dropdown-menu__link">Marketplace</a></li>
+                  <li><a href="#" class="dropdown-menu__link">Features</a></li>
+                  <li><a href="#" class="dropdown-menu__link">Integrations</a></li>
 
-  Connect
+                </ul>
+              </div>
 
-  Contact
-  Newsletter
-  LinkedIn
+            </li>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+            <!-- Dropdown 2: Company -->
+            <li class="nav__item-dropdown">
+
+              <button class="nav__btn-dropdown">
+                Company
+                <!-- mobile arrow -->
+                <img class="icon-arrow  icon-arrow--dark" src="./assets/icons/icon-arrow-dark.svg" alt=""
+                  aria-hidden="true">
+
+                <!-- desktop arrow -->
+                <img class="icon-arrow  icon-arrow--light" src="./assets/icons/icon-arrow-light.svg" alt=""
+                  aria-hidden="true">
+              </button>
+
+              <div class="dropdown-menu">
+
+                <ul class="dropdown-menu__list">
+
+                  <li><a href="#" class="dropdown-menu__link">About</a></li>
+                  <li><a href="#" class="dropdown-menu__link">Team</a></li>
+                  <li><a href="#" class="dropdown-menu__link">Blog</a></li>
+                  <li><a href="#" class="dropdown-menu__link">Careers</a></li>
+
+                </ul>
+
+              </div>
+            </li>
+
+            <!-- Dropdown 3: Connect -->
+            <li class="nav__item-dropdown">
+
+              <button class="nav__btn-dropdown">
+                Connect
+                <!-- mobile arrow -->
+                <img class="icon-arrow  icon-arrow--dark" src="./assets/icons/icon-arrow-dark.svg" alt=""
+                  aria-hidden="true">
+
+                <!-- desktop arrow -->
+                <img class="icon-arrow  icon-arrow--light" src="./assets/icons/icon-arrow-light.svg" alt=""
+                  aria-hidden="true">
+              </button>
+
+              <div class="dropdown-menu">
+
+                <ul class="dropdown-menu__list">
+
+                  <li><a href="#" class="dropdown-menu__link">Contact</a></li>
+                  <li><a href="#" class="dropdown-menu__link">Newsletter</a></li>
+                  <li><a href="#" class="dropdown-menu__link">Linkedin</a></li>
+
+                </ul>
+              </div>
+            </li>
+
+          </ul>
+
+          <hr class="divider">
+
+          <!-- Auth buttons -->
+          <div class="nav__auth">
+            <a href="#" class="btn  btn--text">Login</a>
+            <a href="#" class="btn  btn--primary">Sign Up</a>
+          </div>
+
+        </div>
+      </nav>
+
+    </div>
+
+  </header>
+
 </body>
 
 </html>
