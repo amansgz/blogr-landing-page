@@ -55,4 +55,10 @@
   --container-padding: 1.5rem;
   --container-max-width: 1200px;
   --container-margin: 0 auto;
+
+  /* Gaps */
+  --gap-sm: 1rem;
+  --gap-md: 1.5rem;
+  --gap-lg: 2rem;
+  --gap-xl: 3rem;
 }
