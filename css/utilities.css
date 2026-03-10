@@ -1,0 +1,30 @@
+/*  ================================
+    utilities.css - Helper classes
+    ================================ */
+
+/* Text colors */
+.text-white {
+  color: var(--color-text-white);
+}
+
+.text-very-light {
+  color: var(--color-text-very-light);
+}
+
+/* Text alignment */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Display utilities */
+.d-none {
+  display: none;
+}

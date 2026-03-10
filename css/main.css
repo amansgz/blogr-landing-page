@@ -7,3 +7,6 @@
 
 /* 2. BASE - Global styles, reset,typography */
 @import "base.css";
+
+/* 5. UTILITIES - Helper classes */
+@import "utilities.css";
