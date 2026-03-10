@@ -42,4 +42,17 @@
   /* Colors lines, borders */
   --color-divider: var(--color-very-light-neutral-600);
   --color-border-white: var(--color-neutral-white);
+
+  /* Spacings */
+  --space-xs: 0.5rem; /* 8px */
+  --space-sm: 1rem; /* 16px */
+  --space-md: 1.5rem; /* 24px */
+  --space-lg: 2rem; /* 32px */
+  --space-xl: 3rem; /* 48px */
+  --space-xxl: 5rem; /* 80px */
+
+  /* Spacing Containers */
+  --container-padding: 1.5rem;
+  --container-max-width: 1200px;
+  --container-margin: 0 auto;
 }
