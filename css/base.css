@@ -1,3 +1,154 @@
 /* ===================================
    base.css - Fundamental Styles
   ==================================== */
+
+/* -----------------------------------
+  1. RESET
+  ------------------------------------ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+li {
+  margin-block-end: var(--space-sm);
+}
+
+/* Remove margin from last item li */
+li:last-child {
+  margin-block-end: 0;
+}
+
+/* Remove underline from links */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Responsive images */
+picture {
+  display: block;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Form elements consistency */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  border: none;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* -----------------------------------
+  3. GLOBAL STYLES (html, body)
+  ------------------------------------ */
+html {
+  font-size: 16px; /* base for rem units */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-base);
+  font-weight: var(--font-light);
+  color: var(--color-text-dark);
+  line-height: 1.5;
+  background-color: var(--color-bg-white);
+  min-block-size: 100vh;
+}
+
+/* -----------------------------------
+  4. GLOBAL TYPOGRAPHY (headings)
+  ------------------------------------ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-bold);
+  color: var(--color-primary-300);
+  line-height: 1.2;
+  margin-block: var(--space-md);
+}
+
+/* Default sizes */
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+h4 {
+  font-size: var(--font-size-md);
+}
+
+/* -----------------------------------
+  5. TEXT ELEMENTS
+  ------------------------------------ */
+p {
+  font-size: var(--font-size-md);
+  max-inline-size: 50ch;
+  margin-block-end: var(--space-md);
+}
+
+/* Remove margin from last paragraph */
+p:last-child {
+  margin-block-end: 0;
+}
+
+a,
+button {
+  font-size: var(--font-size-md);
+}
+
+/* -----------------------------------
+  6. BASE UTILITIES
+  ------------------------------------ */
+.container {
+  max-inline-size: var(--container-max-width);
+  margin: var(--container-margin);
+  padding: 0 var(--container-padding);
+  inline-size: 100%;
+}
+
+/* Visually hidden but accessible to screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
