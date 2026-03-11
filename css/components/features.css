@@ -1,3 +1,30 @@
 /*  ========================================
     features.css - 
     ======================================== */
+
+.features-section {
+  background-color: var(--color-bg-white);
+  padding-block: var(--space-xxl);
+}
+
+@media (min-width: 64rem) {
+  .features-section {
+    position: relative;
+  }
+
+  .features__image-container {
+    inline-size: 50%;
+  }
+
+  .features__image-container--left img {
+    position: absolute;
+    left: 0;
+    inline-size: 50%;
+    transform: translate(-30%, -50%);
+  }
+
+  .features__content {
+    inline-size: 50%;
+    margin-inline-start: auto;
+  }
+}
