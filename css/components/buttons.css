@@ -1,0 +1,26 @@
+/*  ========================================
+    buttons.css - 
+    ======================================== */
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: var(--radius-lg);
+  font-family: var(--font-text);
+  font-weight: var(--font-bold);
+
+  transition:
+    color,
+    background-color 0.2s ease;
+}
+
+.btn--primary {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-white);
+
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-text {
+  background: transparent;
+}

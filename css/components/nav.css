@@ -1,0 +1,145 @@
+/*  ========================================
+    nav.css - 
+    ======================================== */
+
+/* -------------------
+    Mobile navigation
+    ------------------*/
+
+.nav__toggle {
+  position: relative; /* for icons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  inline-size: 1.33rem;
+  block-size: 1.33rem;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.nav__toggle-icon {
+  position: absolute; /* if overlapping */
+
+  inline-size: 1.25rem;
+  block-size: auto;
+
+  transition: opacity 0.3s ease;
+}
+
+.nav__toggle-icon--close {
+  opacity: 0;
+  pointer-events: none; /* prevents clicking hidden icon */
+}
+
+/* Toggle icons based on aria-expanded state */
+.nav__toggle[aria-expanded="true"] .nav__toggle-icon--hamburger {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav__toggle[aria-expanded="true"] .nav__toggle-icon--close {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav__toggle-icon,
+  .nav__toggle-icon--hamburger,
+  .nav__toggle-icon--close {
+    transition: none;
+  }
+}
+
+/* Menu navigation */
+
+.nav__menu {
+  /* Hidden by default */
+  opacity: 0;
+  visibility: hidden;
+
+  position: absolute;
+  inset-block-start: 100%;
+  inset-inline-end: 0;
+
+  inline-size: min(28rem, 90vw);
+
+  margin-block-start: var(--space-md);
+  padding-block: var(--space-md);
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-sm);
+
+  transform: translateY(-10px);
+
+  box-shadow: var(--shadow-md);
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease;
+  z-index: 15;
+}
+
+/* Show menu when button has aria-expanded="true" */
+.nav__toggle[aria-expanded="true"] + .nav__menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav__menu {
+    transition: none;
+  }
+}
+
+/* Dropdowns */
+.nav__item-dropdown {
+  gap: var(--space-sm);
+  margin-block-end: var(--space-sm);
+}
+
+/* Arrows images*/
+.icon-arrow {
+  inline-size: 0.9rem;
+  block-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.nav__btn-dropdown--open .icon-arrow {
+  transform: rotate(180deg);
+}
+
+.icon-arrow--light {
+  display: none;
+}
+
+.dropdown-menu {
+  opacity: 0;
+  max-block-size: 0;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg-light);
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown-menu--open {
+  opacity: 1;
+  max-block-size: 300px;
+  padding: var(--space-lg);
+}
+
+/* Divider */
+.divider {
+  align-self: center;
+  inline-size: 80%;
+  border: 1px solid var(--color-divider);
+}
+
+/* Nav auth: Login - Sign Up */
+.nav__auth {
+  padding: var(--space-sm);
+}

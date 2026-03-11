@@ -120,6 +120,10 @@ body {
   min-block-size: 100vh;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 /* -----------------------------------
   4. GLOBAL TYPOGRAPHY (headings)
   ------------------------------------ */
