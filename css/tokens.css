@@ -22,6 +22,9 @@
   --color-light-neutral-600: hsl(207, 13%, 80%);
   --color-very-light-neutral-600: hsl(207, 13%, 90%);
 
+  /* Darkness Variations */
+  --color-very-dark-purple: hsl(237, 17%, 3%);
+
   /* Colors Text */
   --color-text-dark: var(--color-neutral-900); /* grey-900 */
   --color-text-light: var(--color-neutral-600); /* gray-600 */
@@ -38,6 +41,7 @@
   /* Colors Hover states */
   --color-hover-primary: var(--color-primary-200); /* red-400 */
   --color-hover-white: var(--color-neutral-white);
+  --color-hover-link: var(--color-very-dark-purple);
 
   /* Colors lines, borders */
   --color-divider: var(--color-very-light-neutral-600);
