@@ -23,8 +23,3 @@
 .text-right {
   text-align: right;
 }
-
-/* Display utilities */
-.d-none {
-  display: none;
-}

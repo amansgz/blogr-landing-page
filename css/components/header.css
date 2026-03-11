@@ -20,3 +20,12 @@
 .header__nav {
   position: relative; /* for nav menu */
 }
+
+/* Media Queries */
+@media (min-width: 48rem) {
+  .header__nav {
+    align-items: center;
+    gap: var(--space-md);
+    inline-size: 85%;
+  }
+}

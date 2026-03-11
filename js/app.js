@@ -28,15 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
       mainMenu.classList.toggle("nav__menu--open");
       toggleButton.classList.toggle("nav__toggle--open");
 
-      // Toggle icon
-      const iconHamburger = toggleButton.querySelector(".icon--hamburger");
-      const iconClose = toggleButton.querySelector(".icon--close");
-
-      if (iconHamburger && iconClose) {
-        iconHamburger.classList.toggle("d-none");
-        iconClose.classList.toggle("d-none");
-      }
-
       // Prevent body scroll when menu is open (mobile)
       document.body.classList.toggle("no-scroll", !isExpanded);
     });
@@ -72,11 +63,14 @@ document.addEventListener("DOMContentLoaded", function () {
         // Close other open dropdowns
         dropdownButtons.forEach((otherBtn) => {
           if (otherBtn !== button) {
-            otherBtn.setAttribute("aria-expanded", "falsse");
+            otherBtn.setAttribute("aria-expanded", "false");
             const otherDropdownId = otherBtn.getAttribute("aria-controls");
             const otherDropdown = document.getElementById(otherDropdownId);
             if (otherDropdown) {
-              otherDropdown.classList.remove("dropdown-mwnu--open");
+              otherDropdown.classList.remove("dropdown-menu--open");
+
+              // Rotate arrow (CSS)
+              otherBtn.classList.remove("nav__btn-dropdown--open");
             }
           }
         });
