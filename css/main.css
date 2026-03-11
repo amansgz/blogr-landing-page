@@ -16,6 +16,7 @@
 @import "components/nav.css";
 @import "components/buttons.css";
 @import "components/hero.css";
+@import "components/features.css";
 
 /* 5. UTILITIES - Helper classes */
 @import "utilities.css";
