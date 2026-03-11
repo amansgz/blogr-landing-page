@@ -115,7 +115,8 @@ body {
   font-weight: var(--font-light);
   color: var(--color-text-dark);
   line-height: 1.5;
-  background-color: var(--color-bg-white);
+  background-color: var(--color-bg-dark);
+
   min-block-size: 100vh;
 }
 
