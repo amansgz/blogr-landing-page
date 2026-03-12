@@ -18,6 +18,7 @@
 @import "components/hero.css";
 @import "components/features.css";
 @import "components/infrastructure.css";
+@import "components/footer.css";
 
 /* 5. UTILITIES - Helper classes */
 @import "utilities.css";
