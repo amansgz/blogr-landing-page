@@ -1,3 +1,62 @@
 /*  ========================================
     footer.css - 
     ======================================== */
+
+.footer {
+  position: relative;
+  padding-block: var(--space-xxl);
+  background-color: var(--color-bg-white);
+  z-index: 1;
+  isolation: isolate;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  inset-block-end: 0;
+
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-gradient-dark-purple),
+    var(--color-gradient-purple)
+  );
+  border-top-right-radius: var(--radius-xl);
+  z-index: -1;
+}
+
+.footer__logo {
+  margin-block-end: var(--space-md);
+}
+
+.footer__link {
+  color: var(--color-text-very-light);
+  transition: text-decoration 0.2s ease;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer__link {
+    transition-duration: 0.01ms;
+  }
+}
+
+/* Media Queries */
+@media (min-width: 48rem) {
+  .footer__logo {
+    inline-size: 20%;
+  }
+
+  .footer__nav {
+    inline-size: 60%;
+  }
+
+  .footer__menu-title {
+    margin-block-start: 0;
+  }
+}
